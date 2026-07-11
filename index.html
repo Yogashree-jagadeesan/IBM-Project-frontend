@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+InterviewAce AI
+</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+    InterviewAce AI
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#features">Features</a>
+<a href="#chat">Interview</a>
+<a href="#about">About</a>
+
+</nav>
+
+
+<button onclick="scrollToChat()">
+Start Interview
+</button>
+
+
+</header>
+
+
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+<h1>
+AI Powered
+<span>
+Interview Preparation
+</span>
+</h1>
+
+
+<p>
+
+Practice technical, HR and mock interviews
+with IBM watsonx Orchestrate AI.
+
+</p>
+
+
+<button onclick="scrollToChat()">
+Start AI Interview
+</button>
+
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="ai-box">
+
+🤖
+
+<br>
+
+InterviewAce AI
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="features">
+
+
+<h2>
+Features
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Technical Interview
+</h3>
+
+<p>
+Practice coding, DSA, DBMS, OS and AI questions.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+HR Interview
+</h3>
+
+<p>
+Improve communication and confidence.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Mock Interview
+</h3>
+
+<p>
+Experience real interview simulation.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="chat">
+
+
+<h2>
+Start Your AI Interview
+</h2>
+
+
+<p>
+Chat with InterviewAce AI Agent
+</p>
+
+
+
+<div id="root"></div>
+
+
+</section>
+
+
+
+
+
+<section id="about">
+
+
+<h2>
+Powered by IBM watsonx Orchestrate
+</h2>
+
+
+<p>
+
+An AI interview assistant that helps students
+prepare for industry interviews.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 InterviewAce AI
+
+</footer>
+
+
+
+
+
+
+<!-- IBM watsonx Orchestrate -->
+
+<script>
+
+window.wxOConfiguration = {
+
+    orchestrationID:
+    "60d15f711a7642b99ed0ecec8170dc32_eba35e5b-be00-4c24-8280-410302958f64",
+
+    hostURL:
+    "https://eu-de.watson-orchestrate.cloud.ibm.com",
+
+    rootElementID:
+    "root",
+
+    deploymentPlatform:
+    "ibmcloud",
+
+    crn:
+    "crn:v1:bluemix:public:watsonx-orchestrate:eu-de:a/60d15f711a7642b99ed0ecec8170dc32:eba35e5b-be00-4c24-8280-410302958f64::",
+
+    chatOptions: {
+
+        agentId:
+        "6bba6e71-952b-4f50-944e-442f0056717b",
+
+        agentEnvironmentId:
+        "3038bdc4-f8a8-4543-a669-158f1a5f725a"
+
+    }
+
+};
+
+
+(function(){
+
+const script=document.createElement("script");
+
+script.src =
+"https://eu-de.watson-orchestrate.cloud.ibm.com/wxochat/wxoLoader.js?embed=true";
+
+
+script.onload=function(){
+
+    wxoLoader.init();
+
+};
+
+
+document.head.appendChild(script);
+
+
+})();
+
+
+</script>
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
